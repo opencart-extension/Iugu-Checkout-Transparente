@@ -6,7 +6,7 @@
 */
 class ModelSaleOrderIugu extends Model {
 	
-	public function getorder($order_id) {
+	public function getOrder($order_id) {
 		$result = $this->db->query('SELECT * FROM ' . DB_PREFIX . 'order_iugu WHERE order_id = "' . (int)$order_id . '"');
 		
 		return $result->row;
