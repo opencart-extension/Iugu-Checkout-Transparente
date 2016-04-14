@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>Iugu Checkout Transparente</name>
+  <code>valdeir_iugu</code>
+  <version>1.2</version>
+  <author>Valdeir Santana</author>
+  <link>http://www.valdeirsantana.com.br</link>
+  <file path="catalog/controller/common/header.php">
+	<operation>
+		<search><![CDATA[public function index() {]]></search>
+		<add position="after"><![CDATA[
+		$this->document->addScript('https://js.iugu.com/v2');
+		]]></add>
+	</operation>
+  </file>
+  
+  <file path="admin/controller/sale/order.php">
+	<operation>
+		<search index="0"><![CDATA[if ($order_info) {]]></search>
+		<add position="after"><![CDATA[
+		$this->load->model('sale/order_iugu');
+		
+		$order_iugu_info = $this->model_sale_order_iugu->getOrder($order_id);
+		
+		if ($order_iugu_info) {
+			$data['order_iugu'] = true;
+			$data['iugu_invoice_url'] = $order_iugu_info['pdf'];
+			$data['iugu_invoice_id'] = $order_iugu_info['invoice_id'];
+			$data['iugu_order_status_refunded'] = $this->config->get('iugu_order_status_refunded');
+			$data['iugu_order_status_canceled'] = $this->config->get('iugu_order_status_canceled');
+			
+			$this->language->load('sale/order_iugu');
+			
+			$data['text_iugu_view_invoice'] = $this->language->get('text_iugu_view_invoice');
+			$data['text_iugu_send_invoice'] = $this->language->get('text_iugu_send_invoice');
+			$data['text_iugu_refund'] = $this->language->get('text_iugu_refund');
+			$data['text_iugu_cancel'] = $this->language->get('text_iugu_cancel');
+			$data['text_iugu_invoice_sent'] = $this->language->get('text_iugu_invoice_sent');
+			$data['text_confirm'] = $this->language->get('text_confirm');
+		} else {
+			$data['order_iugu'] = false;
+		}
+		]]></add>
+	</operation>
+  </file>
+  
+  <file path="admin/view/template/sale/order_info.tpl">
+	<operation>
+		<search><![CDATA[<?php echo $footer; ?> ]]></search>
+		<add position="before"><![CDATA[
+		<!-- Modal -->
+		<?php if ($order_iugu): ?>
+		<div class="modal fade" id="modal-iugu-invoice" tabindex="-1" role="dialog" aria-labelledby="iugu-invoice"><div class="modal-dialog" role="document"><div class="modal-content"></div></div></div>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('#content .page-header .pull-right').append('<button type="button" id="button-iugu" class="btn btn-primary">Iugu</button>');
+				
+				var html = '<a id="button-iugu-invoice" data-url="<?php echo $iugu_invoice_url ?>" class="btn btn-primary" style="width:100%" data-loading-text="<?php echo $text_loading ?>"><?php echo $text_iugu_view_invoice ?></a>';
+				html += '<a id="button-iugu-send-invoice" class="btn btn-info" style="width:100%" data-loading-text="<?php echo $text_loading ?>"><?php echo $text_iugu_send_invoice ?></a>';
+				html += '<a id="button-iugu-refund" class="btn btn-warning" style="width:100%" data-loading-text="<?php echo $text_loading ?>"><?php echo $text_iugu_refund ?></a>';
+				html += '<a id="button-iugu-cancel" class="btn btn-danger" style="width:100%" data-loading-text="<?php echo $text_loading ?>"><?php echo $text_iugu_cancel ?></a>';
+				
+				$('#button-iugu').popover({
+					content: html,
+					html: true,
+					placement: 'bottom',
+					template: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-content text-center"></div></div>'
+				});
+				
+				$('#content .page-header .pull-right').delegate('#button-iugu-invoice', 'click', function(){
+					$('#modal-iugu-invoice .modal-content').html('<object type="application/pdf" data="' + $(this).attr('data-url') + '" style="width:100%;min-height:600px">this is not working as expected</object>');
+					$('#modal-iugu-invoice').modal('show');
+					
+					return false;
+				});
+				
+				$('#content .page-header .pull-right').delegate('#button-iugu-send-invoice', 'click', function(){
+					$.ajax({
+						url: 'index.php?route=sale/order_iugu/sendMail&token=<?php echo $token ?>',
+						data: 'pdf=<?php echo urlencode($iugu_invoice_url) ?>&email=<?php echo urlencode($email) ?>',
+						type: 'POST',
+						beforeSend: function(){
+							$('#button-iugu-send-invoice').button('loading');
+						},
+						success: function(result){
+							alert('<?php echo $text_iugu_invoice_sent ?>');
+						},
+						complete: function(){
+							$('#button-iugu-send-invoice').button('reset');
+						}
+					});
+					
+					return false;
+				});
+				
+				$('#content .page-header .pull-right').delegate('#button-iugu-refund', 'click', function(){
+					if (window.confirm('<?php echo $text_confirm ?>')) {
+						$.ajax({
+							url: 'index.php?route=sale/order_iugu/refund&token=<?php echo $token ?>',
+							data: 'order_id=<?php echo $order_id ?>&invoice_id=<?php echo $iugu_invoice_id ?>',
+							type: 'POST',
+							dataType: 'json',
+							beforeSend: function(){
+								$('#button-iugu-refund').button('loading');
+							},
+							success: function(result){
+								alert(result.message);
+								
+								if (result.success) {
+									$('select[name="order_status_id"]').val('<?php echo $iugu_order_status_refunded ?>')
+									$('#button-history').trigger('click');
+								}
+							},
+							complete: function(){
+								$('#button-iugu-refund').button('reset');
+							}
+						});
+					}
+					
+					return false;
+				});
+				
+				$('#content .page-header .pull-right').delegate('#button-iugu-cancel', 'click', function(){
+					if (window.confirm('<?php echo $text_confirm ?>')) {
+						$.ajax({
+							url: 'index.php?route=sale/order_iugu/cancel&token=<?php echo $token ?>',
+							data: 'order_id=<?php echo $order_id ?>&invoice_id=<?php echo $iugu_invoice_id ?>',
+							type: 'POST',
+							dataType: 'json',
+							beforeSend: function(){
+								$('#button-iugu-cancel').button('loading');
+							},
+							success: function(result){
+								alert(result.message);
+								
+								if (result.success) {
+									$('select[name="order_status_id"]').val('<?php echo $iugu_order_status_canceled ?>')
+									$('#button-history').trigger('click');
+								}
+							},
+							complete: function(){
+								$('#button-iugu-cancel').button('reset');
+							}
+						});
+					}
+					
+					return false;
+				});
+			});
+		</script>
+		<?php endif ?>
+		}]]></add>
+	</operation>
+  </file>
+  <file path="catalog/view/theme/*/template/common/footer.tpl">
+    <operation error="skip">
+      <search><![CDATA[<p><?php echo $powered; ?></p>]]></search>
+      <add position="after"><![CDATA[
+        <div style="position:absolute;left:-9999px;top:-9999px;"><h1><a href="//www.valdeirsantana.com.br">Valdeir Santana / OpenCart / Lojas Virtuais / Arastta / Iugu</a></h1></div>
+      ]]></add>
+    </operation>
+  </file>
+</modification>

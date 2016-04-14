@@ -1,0 +1,1472 @@
+@media print {
+  body *:not(#print) {
+      display: none;
+    }
+    .printer {
+        display: block
+    }
+    .printer .reverse {
+        text-align: right
+    }
+    .printer .print-bs-header {
+        margin-bottom: 20px
+    }
+    .printer .print-bs-header .mechanical-aut {
+        font-size: 8px
+    }
+    .printer .bold {
+        font-weight: bold
+    }
+    .printer .cut-this-line span {
+        font-size: 7px
+    }
+    .printer .bank-slip-info {
+        height: 331px;
+        position: relative
+    }
+    .printer .bank-slip-info .bank-slip-icon,
+    .printer .bank-slip-info .iugu-icon {
+        position: absolute;
+        top: 0px
+    }
+    .printer .bank-slip-info .bank-slip-icon {
+        left: 16px
+    }
+    .printer .bank-slip-info .iugu-icon {
+        right: 16px;
+        width: 75px
+    }
+    .printer .bank-slip-info .right-bank-slip-info {
+        padding-left: 0px;
+        margin-top: 2px
+    }
+    .printer .bank-slip-info .right-bank-slip-info .bank-slip-label {
+        min-height: 30px;
+        margin-bottom: 9px
+    }
+    .printer .bank-slip-info .right-bank-slip-info .bank-slip-label .last-label {
+        margin-bottom: 0px
+    }
+    .printer .bank-slip-info .bank-slip-label.no-space-left {
+        margin-left: 0px
+    }
+    .printer .bank-slip-info .bank-slip-label.no-space-right {
+        margin-right: 0px
+    }
+    .printer .bank-slip-info .no-padding-left {
+        padding-left: 0px
+    }
+    .printer .bank-slip-info .bank-slip-label,
+    .printer .bank-slip-info .bank-slip-aut-label {
+        padding: 0 0 10px 10px;
+        border-left: 1px solid #000;
+        margin-bottom: 10px;
+        margin-left: 54px
+    }
+    .printer .bank-slip-info .bank-slip-label span,
+    .printer .bank-slip-info .bank-slip-label h5,
+    .printer .bank-slip-info .bank-slip-aut-label span,
+    .printer .bank-slip-info .bank-slip-aut-label h5 {
+        padding: 0;
+        margin: 0
+    }
+    .printer .bank-slip-info .bank-slip-label span,
+    .printer .bank-slip-info .bank-slip-aut-label span {
+        font-size: 8px
+    }
+    .printer .bank-slip-info .bank-slip-label h5,
+    .printer .bank-slip-info .bank-slip-aut-label h5 {
+        font-size: 10px
+    }
+    .printer .bank-slip-info .bank-slip-label span,
+    .printer .bank-slip-info .bank-slip-label div,
+    .printer .bank-slip-info .bank-slip-aut-label span,
+    .printer .bank-slip-info .bank-slip-aut-label div {
+        line-height: 10px;
+        margin: 0px;
+        padding: 0px;
+        display: block
+    }
+    .printer .bank-slip-info .bank-slip-label span,
+    .printer .bank-slip-info .bank-slip-aut-label span {
+        text-transform: uppercase;
+        color: #686868 !important
+    }
+    .printer .bank-slip-info .bank-slip-label .bank-info,
+    .printer .bank-slip-info .bank-slip-aut-label .bank-info {
+        margin-bottom: 0px
+    }
+    .printer .bank-slip-info .bank-slip-label .bank-info h5,
+    .printer .bank-slip-info .bank-slip-label .bank-info span,
+    .printer .bank-slip-info .bank-slip-aut-label .bank-info h5,
+    .printer .bank-slip-info .bank-slip-aut-label .bank-info span {
+        display: inline-block !important;
+        font-size: 13px
+    }
+    .printer .bank-slip-info .bank-slip-label .bank-info span,
+    .printer .bank-slip-info .bank-slip-aut-label .bank-info span {
+        margin-left: 8px
+    }
+    .printer .bank-slip-info .bank-slip-label .line,
+    .printer .bank-slip-info .bank-slip-aut-label .line {
+        margin-bottom: 4px
+    }
+    .printer .bank-slip-info .instruction-div {
+        min-height: 46px !important
+    }
+    .printer .bank-slip-info .bank-slip-label {
+        border-bottom: 1px solid #000;
+        min-height: 43px
+    }
+    .printer .bank-slip-info .bank-slip-label .cpf_or_cnpj {
+        padding-top: 2px
+    }
+    .printer .bank-slip-info .bank-slip-label .cpf_or_cnpj span {
+        color: #000 !important
+    }
+    .printer .bank-slip-info .bot-div .bank-slip-aut-label {
+        border-top: 1px solid #000;
+        position: absolute;
+        width: 208px;
+        height: 95px;
+        bottom: -42px !important;
+        right: 15px !important;
+        -webkit-print-color-adjust: exact;
+        padding-top: 5px;
+        padding-left: 0;
+        text-align: center;
+        color: #686868 !important
+    }
+    .printer .bank-slip-info .bot-div .barcode_info {
+        margin-left: 15px
+    }
+    .printer .bank-slip-info .bot-div .barcode_info .digitable-line {
+        margin-left: 20px
+    }
+}
+
+
+.invoice html,
+.invoice,
+.invoice div,
+.invoice span,
+.invoice object,
+.invoice iframe,
+.invoice h1,
+.invoice h2,
+.invoice h3,
+.invoice h4,
+.invoice h5,
+.invoice h6,
+.invoice p,
+.invoice blockquote,
+.invoice pre,
+.invoice abbr,
+.invoice address,
+.invoice cite,
+.invoice code,
+.invoice del,
+.invoice dfn,
+.invoice em,
+.invoice img,
+.invoice ins,
+.invoice kbd,
+.invoice q,
+.invoice samp,
+.invoice small,
+.invoice strong,
+.invoice sub,
+.invoice sup,
+.invoice var,
+.invoice b,
+.invoice i,
+.invoice dl,
+.invoice dt,
+.invoice dd,
+.invoice ol,
+.invoice ul,
+.invoice li,
+.invoice fieldset,
+.invoice form,
+.invoice label,
+.invoice legend,
+.invoice table,
+.invoice caption,
+.invoice tbody,
+.invoice tfoot,
+.invoice thead,
+.invoice tr,
+.invoice th,
+.invoice td,
+.invoice article,
+.invoice aside,
+.invoice figure,
+.invoice footer,
+.invoice header,
+.invoice hgroup,
+.invoice menu,
+.invoice nav,
+.invoice section,
+.invoice menu,
+.invoice time,
+.invoice mark {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+.invoice html {
+    font-family: "Arial";
+    height: 100%;
+    width: 100%;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.invoice article,
+.invoice aside,
+.invoice figure,
+.invoice footer,
+.invoice header,
+.invoice hgroup,
+.invoice nav,
+.invoice section,
+.invoice details,
+.invoice figcaption {
+    display: block
+}
+.invoice html.mobile {
+    overflow-y: auto
+}
+.invoice ul {
+    list-style: none
+}
+.invoice blockquote,
+.invoice q {
+    quotes: none
+}
+.invoice blockquote:before,
+.invoice blockquote:after,
+.invoice q:before,
+.invoice q:after {
+    content: "";
+    content: none
+}
+.invoice del {
+    text-decoration: line-through
+}
+.invoice abbr[title],
+.invoice dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help
+}
+.invoice table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+.invoice th {
+    font-weight: bold;
+    vertical-align: bottom
+}
+.invoice td {
+    font-weight: normal;
+    vertical-align: top
+}
+.invoice hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+.invoice table {
+    font-size: inherit;
+    font: 100%
+}
+.invoice strong,
+.invoice th {
+    font-weight: bold
+}
+.invoice td,
+.invoice td img {
+    vertical-align: top
+}
+.invoice sub,
+.invoice sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative
+}
+.invoice sup {
+    top: -0.5em
+}
+.invoice sub {
+    bottom: -0.25em
+}
+.invoice .ie7 img {
+    -ms-interpolation-mode: bicubic
+}
+.invoice .ie6 html {
+    filter: expression(document.execCommand("BackgroundImageCache", false, true))
+}
+.invoice .auto-clear:before,
+.invoice .grid:before,
+.invoice .auto-clear:after,
+.invoice .grid:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden
+}
+.invoice .auto-clear:after,
+.invoice .grid:after {
+    clear: both;
+    margin-bottom: 20px
+}
+.invoice .auto-clear,
+.invoice .grid {
+    zoom: 1
+}
+.invoice .clear {
+    clear: both
+}
+.invoice html.mobile {
+    -webkit-text-size-adjust: none
+}
+.invoice html.mobile * {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none
+}
+.invoice html.mobile *:not(input,
+select) {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.invoice html.mobile html,
+.invoice html.mobile body,
+.invoice html.mobile form,
+.invoice html.mobile fieldset,
+.invoice html.mobile p,
+.invoice html.mobile div,
+.invoice html.mobile h1,
+.invoice html.mobile h2,
+.invoice html.mobile h3,
+.invoice html.mobile h4,
+.invoice html.mobile h5,
+.invoice html.mobile h6 {
+    -webkit-text-size-adjust: none
+}
+.invoice .responsive {
+    width: 100%;
+    max-height: 1000px;
+    line-height: 1;
+    display: block
+}
+.invoice html.desktop .only-ios,
+.invoice html.android .only-ios {
+    display: none
+}
+.invoice html.desktop .only-android,
+.invoice html.ios .only-android {
+    display: none
+}
+.invoice html.desktop .only-mobile {
+    display: none
+}
+.invoice html.mobile .only-desktop {
+    display: none
+}
+
+.invoice .no-bottom-margin,
+.invoice .no-bottom-margin:after {
+    margin-bottom: 0px !important
+}
+.invoice .element-spacing {
+    margin-bottom: 20px
+}
+.invoice .box-model {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+.invoice .floating-left,
+.invoice .grid .grid-item,
+.invoice .grid .grid-item-right {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px
+}
+.invoice .floating-right {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+.invoice .grid {
+    margin-left: -20px
+}
+.invoice .grid .grid-item,
+.invoice .grid .grid-item-right {
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-bottom: 0px
+}
+.invoice .grid .grid-item-right {
+    float: right
+}
+.invoice .tal {
+    text-align: left
+}
+.invoice .tar {
+    text-align: right
+}
+.invoice .b1 {
+    width: 20px
+}
+.invoice .b2 {
+    width: 40px
+}
+.invoice .b3 {
+    width: 60px
+}
+.invoice .b4 {
+    width: 80px
+}
+.invoice .b5 {
+    width: 100px
+}
+.invoice .b6 {
+    width: 120px
+}
+.invoice .b7 {
+    width: 140px
+}
+.invoice .b8 {
+    width: 160px
+}
+.invoice .b9 {
+    width: 180px
+}
+.invoice .b10 {
+    width: 200px
+}
+.invoice .b11 {
+    width: 220px
+}
+.invoice .b12 {
+    width: 240px
+}
+.invoice .b13 {
+    width: 260px
+}
+.invoice .b14 {
+    width: 280px
+}
+.invoice .b15 {
+    width: 300px
+}
+.invoice .b16 {
+    width: 320px
+}
+.invoice .b17 {
+    width: 340px
+}
+.invoice .b18 {
+    width: 360px
+}
+.invoice .b19 {
+    width: 380px
+}
+.invoice .b20 {
+    width: 400px
+}
+.invoice .b21 {
+    width: 420px
+}
+.invoice .b22 {
+    width: 440px
+}
+.invoice .b23 {
+    width: 460px
+}
+.invoice .b24 {
+    width: 480px
+}
+.invoice .b25 {
+    width: 500px
+}
+.invoice .b26 {
+    width: 520px
+}
+.invoice .b27 {
+    width: 540px
+}
+.invoice .b28 {
+    width: 560px
+}
+.invoice .b29 {
+    width: 580px
+}
+.invoice .b30 {
+    width: 600px
+}
+.invoice .b31 {
+    width: 620px
+}
+.invoice .b32 {
+    width: 640px
+}
+.invoice .b33 {
+    width: 660px
+}
+.invoice .b34 {
+    width: 680px
+}
+.invoice .b35 {
+    width: 700px
+}
+.invoice .b36 {
+    width: 720px
+}
+.invoice .b37 {
+    width: 740px
+}
+.invoice .b38 {
+    width: 760px
+}
+.invoice .b39 {
+    width: 780px
+}
+.invoice .b40 {
+    width: 800px
+}
+.invoice .b41 {
+    width: 820px
+}
+.invoice .b42 {
+    width: 840px
+}
+.invoice .b43 {
+    width: 860px
+}
+.invoice .b44 {
+    width: 880px
+}
+.invoice .b45 {
+    width: 900px
+}
+.invoice .b46 {
+    width: 920px
+}
+.invoice .b47 {
+    width: 940px
+}
+.invoice .b48 {
+    width: 960px
+}
+.invoice .b49 {
+    width: 980px
+}
+.invoice .b50 {
+    width: 1000px
+}
+.invoice .b51 {
+    width: 1020px
+}
+.invoice .b52 {
+    width: 1040px
+}
+.invoice .b53 {
+    width: 1060px
+}
+.invoice .b54 {
+    width: 1080px
+}
+.invoice .b55 {
+    width: 1100px
+}
+.invoice .b56 {
+    width: 1120px
+}
+.invoice .b57 {
+    width: 1140px
+}
+.invoice .b58 {
+    width: 1160px
+}
+.invoice .b59 {
+    width: 1180px
+}
+.invoice .b60 {
+    width: 1200px
+}
+.invoice .b61 {
+    width: 1220px
+}
+.invoice .b62 {
+    width: 1240px
+}
+.invoice .b63 {
+    width: 1260px
+}
+.invoice .b64 {
+    width: 1280px
+}
+.invoice .b65 {
+    width: 1300px
+}
+.invoice .b66 {
+    width: 1320px
+}
+.invoice .b67 {
+    width: 1340px
+}
+.invoice .b68 {
+    width: 1360px
+}
+.invoice .b69 {
+    width: 1380px
+}
+.invoice .b70 {
+    width: 1400px
+}
+.invoice .b71 {
+    width: 1420px
+}
+.invoice .b72 {
+    width: 1440px
+}
+.invoice .b73 {
+    width: 1460px
+}
+.invoice .b74 {
+    width: 1480px
+}
+.invoice .b75 {
+    width: 1500px
+}
+.invoice .b76 {
+    width: 1520px
+}
+.invoice .b77 {
+    width: 1540px
+}
+.invoice .b78 {
+    width: 1560px
+}
+.invoice .b79 {
+    width: 1580px
+}
+.invoice .b80 {
+    width: 1600px
+}
+.invoice .b81 {
+    width: 1620px
+}
+.invoice .b82 {
+    width: 1640px
+}
+.invoice .b83 {
+    width: 1660px
+}
+.invoice .b84 {
+    width: 1680px
+}
+.invoice .b85 {
+    width: 1700px
+}
+.invoice .b86 {
+    width: 1720px
+}
+.invoice .b87 {
+    width: 1740px
+}
+.invoice .b88 {
+    width: 1760px
+}
+.invoice .b89 {
+    width: 1780px
+}
+.invoice .b90 {
+    width: 1800px
+}
+.invoice .b91 {
+    width: 1820px
+}
+.invoice .b92 {
+    width: 1840px
+}
+.invoice .b93 {
+    width: 1860px
+}
+.invoice .b94 {
+    width: 1880px
+}
+.invoice .b95 {
+    width: 1900px
+}
+.invoice .b96 {
+    width: 1920px
+}
+.invoice .b97 {
+    width: 1940px
+}
+.invoice .b98 {
+    width: 1960px
+}
+.invoice .b99 {
+    width: 1980px
+}
+.invoice .b100 {
+    width: 2000px
+}
+.invoice .b101 {
+    width: 2020px
+}
+.invoice .b102 {
+    width: 2040px
+}
+.invoice .b103 {
+    width: 2060px
+}
+.invoice .b104 {
+    width: 2080px
+}
+.invoice .b105 {
+    width: 2100px
+}
+.invoice .b106 {
+    width: 2120px
+}
+.invoice .b107 {
+    width: 2140px
+}
+.invoice .b108 {
+    width: 2160px
+}
+.invoice .b109 {
+    width: 2180px
+}
+.invoice .b110 {
+    width: 2200px
+}
+.invoice .b111 {
+    width: 2220px
+}
+.invoice .b112 {
+    width: 2240px
+}
+.invoice .b113 {
+    width: 2260px
+}
+.invoice .b114 {
+    width: 2280px
+}
+.invoice .b115 {
+    width: 2300px
+}
+.invoice .b116 {
+    width: 2320px
+}
+.invoice .b117 {
+    width: 2340px
+}
+.invoice .b118 {
+    width: 2360px
+}
+.invoice .b119 {
+    width: 2380px
+}
+.invoice .b120 {
+    width: 2400px
+}
+.invoice .b121 {
+    width: 2420px
+}
+.invoice .b122 {
+    width: 2440px
+}
+.invoice .b123 {
+    width: 2460px
+}
+.invoice .b124 {
+    width: 2480px
+}
+.invoice .b125 {
+    width: 2500px
+}
+.invoice .b126 {
+    width: 2520px
+}
+.invoice .b127 {
+    width: 2540px
+}
+.invoice .b128 {
+    width: 2560px
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    margin-right: 2px;
+    width: 14px;
+    height: 14px;
+    vertical-align: baseline;
+    display: inline-block !important;
+    background-repeat: no-repeat;
+    background: transparent
+}
+.invoice .no-js body div.js-warning {
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+.invoice .no-js body .wrapper {
+    display: none
+}
+.invoice .no-js body div.js-warning .wrapper {
+    display: block;
+    padding: 20px
+}
+.invoice-badge-gray {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -690px;
+    width: 120px;
+    height: 120px
+}
+.invoice-badge-green {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -570px;
+    width: 120px;
+    height: 120px
+}
+.invoice-badge-red {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -450px;
+    width: 120px;
+    height: 120px
+}
+.invoice-badge-test-mode {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -175px;
+    width: 76px;
+    height: 75px
+}
+.invoice-badge-yellow {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -330px;
+    width: 120px;
+    height: 120px
+}
+.invoice-boiler_plate_icon {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: -10px 0;
+    width: 32px;
+    height: 32px
+}
+.invoice-icon-ssl {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -250px;
+    width: 80px;
+    height: 80px
+}
+.invoice-iugu_bank_slip_icon {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -78px;
+    width: 32px;
+    height: 32px
+}
+.invoice-iugu_credit_card_icon {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: -64px -78px;
+    width: 32px;
+    height: 32px
+}
+.invoice-logo-bradesco {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: -42px 0;
+    width: 40px;
+    height: 40px
+}
+.invoice-logo-qr-iugu {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -110px;
+    width: 55px;
+    height: 65px
+}
+.invoice-pag_seguro_icon {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: -32px -78px;
+    width: 32px;
+    height: 32px
+}
+.invoice-toolbar-pay-bg {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 10px;
+    height: 78px
+}
+.invoice .relative {
+    position: relative;
+    min-height: 50px
+}
+.invoice .use_this_cc {
+    margin-top: 16px
+}
+.invoice .use_this_cc .use_this_cc_label {
+    margin-left: 25px
+}
+.invoice .use_this_cc .use_this_cc_button,
+.invoice .use_this_cc .use_this_cc_button_marked {
+    margin-top: 2px;
+    position: absolute;
+    border: 1px solid #000;
+    height: 17px;
+    width: 17px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 15px;
+    color: #fff
+}
+.invoice .use_this_cc .use_this_cc_button {
+    background-color: #fff
+}
+.invoice .use_this_cc .use_this_cc_button_marked {
+    background-color: #3373ad
+}
+.invoice .use_this_cc .use_this_cc_button:hover,
+.invoice .use_this_cc .use_this_cc_button_marked:hover {
+    cursor: pointer
+}
+.invoice .use_this_cc .use_this_cc_button:hover {
+    background-color: #f2f2f2;
+    color: #f2f2f2
+}
+.invoice .use_this_cc .use_this_cc_button_marked:hover {
+    background-color: #4a8dc9
+}
+.invoice .use_this_cc .checkbox {
+    display: none
+}
+#testmode-flag {
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -175px;
+    width: 76px;
+    height: 75px;
+    position: absolute;
+    width: 76px;
+    height: 75px;
+    top: 0;
+    left: 0;
+    z-index: 50
+}
+#testmode-flag span {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    font-size: 9px;
+    line-height: 9px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 90px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 28px
+}
+.invoice .ios .rotated-badge span,
+.invoice .android .rotated-badge span {
+    width: 135px;
+    right: -30px;
+    top: 30px
+}
+.invoice {
+    background-color: #fff;
+    font-family: "Museo Sans 100", "Helvetica";
+    color: #202020
+}
+.invoice input,
+.invoice select {
+    font-family: "Museo Sans 100", "Helvetica"
+}
+.invoice h1,
+.invoice h2,
+.invoice h3,
+.invoice h4,
+.invoice h5,
+.invoice h6 {
+    font-family: "Museo Sans 100", "Helvetica";
+    font-weight: normal
+}
+.invoice .header {
+    background: #edeae3 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-print-color-adjust: exact
+}
+.invoice .header h6 {
+    color: #7f7f7f;
+    font-family: "Museo Sans 300", "Helvetica";
+    font-size: 12px;
+    margin: 0px;
+    text-transform: uppercase
+}
+.invoice .header h5 {
+    font-size: 14px;
+    font-family: "Museo Sans 500", "Helvetica"
+}
+.invoice .header .client_name {
+    margin-bottom: 15px
+}
+.invoice .header .client_document h5 {
+    font-size: 13px
+}
+.invoice .header .account_name {
+    font-family: "Museo Sans 700";
+    text-align: right;
+    max-height: 70px;
+    overflow: hidden
+}
+.invoice .header .account_name span {
+    display: block;
+    font-size: 20px;
+    line-height: 70px
+}
+.invoice .header .account_name img {
+    margin: 0px;
+    padding: 0px;
+    max-height: 70px
+}
+.invoice .header .rotated-badge {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 120px;
+    height: 120px;
+    overflow: hidden
+}
+.invoice .header .rotated-badge span {
+    display: block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 32px;
+    right: -22px;
+    width: 130px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    font-family: "Museo Sans 700";
+    font-size: 16px;
+    line-height: 19px;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8
+}
+.invoice .container {
+    max-width: 680px
+}
+.invoice .wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+.invoice .wrapper .qr-code {
+    margin-bottom: 10px
+}
+.invoice .wrapper .qr-code img {
+    max-width: 100%;
+    margin-bottom: 20px
+}
+.invoice .wrapper .qr-code h5,
+.invoice .wrapper .qr-code h6 {
+    display: inline-block !important;
+    font-family: "Museo Sans 100";
+    font-size: 10px;
+    line-height: 12px;
+    color: #a8a5a1
+}
+.invoice .wrapper .qr-code h6 {
+    text-transform: uppercase;
+    font-family: "Museo Sans 300", "Helvetica"
+}
+.invoice .wrapper .qr-code h5 {
+    max-width: 60%;
+    margin-left: 15px
+}
+.invoice .wrapper .invoice-details h3,
+.invoice .wrapper .invoice-details h5,
+.invoice .wrapper .invoice-details h6 {
+    font-family: "Museo Sans 300", "Helvetica";
+    text-align: right;
+    color: #202020
+}
+.invoice .wrapper .invoice-details h3 {
+    font-size: 18px
+}
+.invoice .wrapper .invoice-details h6 {
+    font-size: 14px;
+    color: #7f7f7f
+}
+.invoice .wrapper .invoice-details h3.bigger {
+    font-size: 22px;
+    text-align: left
+}
+.invoice .wrapper .invoice-details .custom_table {
+    width: 100%
+}
+.invoice .wrapper .invoice-details .custom_table th {
+    font-weight: normal;
+    color: #7f7f7f;
+    padding: 0px
+}
+.invoice .wrapper .invoice-details .custom_table td,
+.invoice .wrapper .invoice-details .custom_table th {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 13px
+}
+.invoice .wrapper .invoice-details .custom_table td {
+    padding-top: 5px;
+    padding-bottom: 4px
+}
+.invoice .wrapper .invoice-details .custom_table td:not(:first-child),
+.invoice .wrapper .invoice-details .custom_table th:not(:first-child) {
+    text-align: right
+}
+.invoice .wrapper .invoice-details .custom_table tr {
+    border-bottom: 2px solid #edeae3
+}
+.invoice .wrapper .invoice-details .custom_table tr.additional-tr {
+    border-bottom: 1px solid #edeae3
+}
+.invoice .wrapper .invoice-details .custom_table tr.total-tr {
+    border-bottom: 0px;
+    margin-top: 10px;
+    font-family: "Museo Sans 500"
+}
+.invoice .wrapper .invoice-details .custom_table tr.total-tr td {
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    color: #202020
+}
+.invoice .wrapper h3 {
+    font-family: "Museo Sans 300", "Helvetica";
+    margin-bottom: 15px;
+    font-size: 22px
+}
+.invoice .wrapper p {
+    font-family: "Museo Sans 100", "Helvetica";
+    color: #7f7f7f;
+    font-size: 14px;
+    margin-bottom: 15px
+}
+.invoice .wrapper h5 {
+    font-family: "Museo Sans 300", "Helvetica";
+    font-size: 14px
+}
+.invoice .wrapper .invoice-icon-ssl {
+    float: right
+}
+.invoice #extra-info {
+    padding-bottom: 5px
+}
+.invoice .credit_card_form {
+    position: relative
+}
+.invoice .credit_card_form .form_header {
+    position: relative;
+    margin-bottom: 15px
+}
+.invoice .credit_card_form .form_header img {
+    position: absolute;
+    top: 0px;
+    right: 0px
+}
+.invoice .credit_card_form .credit_card_name {
+    text-transform: uppercase
+}
+.invoice .credit_card_form input::-webkit-input-placeholder {
+    text-transform: none
+}
+.invoice .credit_card_form .pay-button {
+    height: 44px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    position: absolute;
+    margin-top: 0px;
+    width: 140px;
+    text-align: center;
+    right: 0px;
+    top: 0px;
+    border: 0 !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: "all, 50ms, ease";
+    -moz-transition: "all, 50ms, ease";
+    -ms-transition: "all, 50ms, ease";
+    -o-transition: "all, 50ms, ease";
+    transition: "all, 50ms, ease";
+    color: #fff;
+    font-family: "Museo Sans 500", "Helvetica";
+    border: 0;
+    text-shadow: 0px 1px 0px #3373ad;
+    background-color: #4a8dc9;
+    -webkit-box-shadow: 0px 6px 0px #3373ad;
+    -moz-box-shadow: 0px 6px 0px #3373ad;
+    box-shadow: 0px 6px 0px #3373ad
+}
+.invoice .credit_card_form .pay-button:focus {
+    outline: 0
+}
+.invoice .credit_card_form .pay-button:hover {
+    top: 2px
+}
+.invoice .credit_card_form .pay-button:active {
+    top: 6px
+}
+.invoice .credit_card_form .pay-button:hover {
+    border: 0;
+    background-color: #5e99cf !important;
+    -webkit-box-shadow: 0px 4px 0px #3373ad;
+    -moz-box-shadow: 0px 4px 0px #3373ad;
+    box-shadow: 0px 4px 0px #3373ad
+}
+.invoice .credit_card_form .pay-button:active {
+    -webkit-box-shadow: 0px 3px 0px #3373ad;
+    -moz-box-shadow: 0px 3px 0px #3373ad;
+    box-shadow: 0px 3px 0px #3373ad
+}
+.invoice .bank_slip_form {
+    position: relative
+}
+.invoice .bank_slip_form .form_header {
+    position: relative;
+    margin-bottom: 15px
+}
+.invoice .bank_slip_form .form_header img {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    max-width: 75px
+}
+.invoice .bank_slip_form .bank_slip_info {
+    position: relative
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_icon {
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+.invoice .bank_slip_form .bank_slip_info .right_bank_slip_info {
+    padding-left: 0px;
+    margin-top: 2px
+}
+.invoice .bank_slip_form .bank_slip_info .right_bank_slip_info .bank_slip_label {
+    min-height: 29px;
+    margin-bottom: 9px
+}
+.invoice .bank_slip_form .bank_slip_info .right_bank_slip_info .bank_slip_label .last_label {
+    margin-bottom: 0px
+}
+.invoice .bank_slip_form .bank_slip_info .transferor-line {
+    margin-bottom: 9px
+}
+.invoice .bank_slip_form .bank_slip_info .instruction_div {
+    min-height: 47px
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label {
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 0 7px 7px 7px;
+    margin-bottom: 5px;
+    padding-right: 0px
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label .cpf_or_cnpj {
+    padding-top: 2px
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label .cpf_or_cnpj span {
+    color: #000
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label h5.after_due_date {
+    font-size: 13px
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label span {
+    font-family: "Museo Sans 100", "Helvetica";
+    font-size: 10px;
+    line-height: 10px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    text-transform: uppercase;
+    color: #7f7f7f
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label.reverse span,
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label.reverse h5 {
+    text-align: right
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label.icon_space {
+    line-height: 10px;
+    margin-left: 56px
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label .bank-info {
+    padding-bottom: 2px
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label .bank-info h5,
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label .bank-info span {
+    display: inline-block !important
+}
+.invoice .bank_slip_form .bank_slip_info .bank_slip_label .bank-info span {
+    font-size: 14px;
+    margin-left: 8px;
+    color: #7f7f7f
+}
+.invoice .bank_slip_form .barcode_info h6,
+.invoice .bank_slip_form .barcode_info h5 {
+    font-family: "Museo Sans 100";
+    display: block;
+    text-align: center;
+    max-width: 405px
+}
+.invoice .bank_slip_form .barcode_info h5 {
+    font-family: "Museo Sans 500"
+}
+.invoice .bank_slip_form .barcode_info h6 {
+    font-size: 11px
+}
+.invoice .bank_slip_form .barcode_info h5 {
+    font-size: 10px
+}
+.invoice .bank_slip_form .print-button,
+.invoice .bank_slip_form .pay-bank-slip-button {
+    height: 44px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 0px;
+    width: 140px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 0 !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: "all, 50ms, ease";
+    -moz-transition: "all, 50ms, ease";
+    -ms-transition: "all, 50ms, ease";
+    -o-transition: "all, 50ms, ease";
+    transition: "all, 50ms, ease";
+    color: #fff;
+    font-family: "Museo Sans 500", "Helvetica";
+    border: 0;
+    text-shadow: 0px 1px 0px #b8273c;
+    background-color: #d63c53;
+    -webkit-box-shadow: 0px 6px 0px #b8273c;
+    -moz-box-shadow: 0px 6px 0px #b8273c;
+    box-shadow: 0px 6px 0px #b8273c
+}
+.invoice .bank_slip_form .print-button:focus,
+.invoice .bank_slip_form .pay-bank-slip-button:focus {
+    outline: 0
+}
+.invoice .bank_slip_form .print-button:hover,
+.invoice .bank_slip_form .pay-bank-slip-button:hover {
+    top: 2px
+}
+.invoice .bank_slip_form .print-button:active,
+.invoice .bank_slip_form .pay-bank-slip-button:active {
+    top: 6px
+}
+.invoice .bank_slip_form .print-button:hover,
+.invoice .bank_slip_form .pay-bank-slip-button:hover {
+    border: 0;
+    background-color: #da5166 !important;
+    -webkit-box-shadow: 0px 4px 0px #b8273c;
+    -moz-box-shadow: 0px 4px 0px #b8273c;
+    box-shadow: 0px 4px 0px #b8273c
+}
+.invoice .bank_slip_form .print-button:active,
+.invoice .bank_slip_form .pay-bank-slip-button:active {
+    -webkit-box-shadow: 0px 3px 0px #b8273c;
+    -moz-box-shadow: 0px 3px 0px #b8273c;
+    box-shadow: 0px 3px 0px #b8273c
+}
+.invoice .bank_slip_form .pay-bank-slip-button {
+    font-family: "Museo Sans 500", "Helvetica";
+    border: 0;
+    text-shadow: 0px 1px 0px #b3b3b3;
+    background-color: #ccc;
+    -webkit-box-shadow: 0px 6px 0px #b3b3b3;
+    -moz-box-shadow: 0px 6px 0px #b3b3b3;
+    box-shadow: 0px 6px 0px #b3b3b3
+}
+.invoice .bank_slip_form .pay-bank-slip-button:hover {
+    border: 0;
+    background-color: #d9d9d9 !important;
+    -webkit-box-shadow: 0px 4px 0px #b3b3b3;
+    -moz-box-shadow: 0px 4px 0px #b3b3b3;
+    box-shadow: 0px 4px 0px #b3b3b3
+}
+.invoice .bank_slip_form .pay-bank-slip-button:active {
+    -webkit-box-shadow: 0px 3px 0px #b3b3b3;
+    -moz-box-shadow: 0px 3px 0px #b3b3b3;
+    box-shadow: 0px 3px 0px #b3b3b3
+}
+.invoice .printer {
+    display: none
+}
+
+@media screen and (max-width: 768px) {
+    .invoice .credit_card_form .pay-button {
+        width: 100%
+    }
+    .invoice .bank_slip_form .print-button,
+    .invoice .bank_slip_form .pay-bank-slip-button {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 30px
+    }
+}

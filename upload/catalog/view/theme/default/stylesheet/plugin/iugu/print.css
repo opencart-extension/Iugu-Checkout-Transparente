@@ -1,0 +1,148 @@
+
+    body *:not(#print) {
+      display: none;
+    }
+    #print *:not(.screen) {
+      display: block !important;
+    }
+    .printer {
+        display: block
+    }
+    .printer .reverse {
+        text-align: right
+    }
+    .printer .print-bs-header {
+        margin-bottom: 20px
+    }
+    .printer .print-bs-header .mechanical-aut {
+        font-size: 8px
+    }
+    .printer .bold {
+        font-weight: bold
+    }
+    .printer .cut-this-line span {
+        font-size: 7px
+    }
+    .printer .bank-slip-info {
+        height: 331px;
+        position: relative
+    }
+    .printer .bank-slip-info .bank-slip-icon,
+    .printer .bank-slip-info .iugu-icon {
+        position: absolute;
+        top: 0px
+    }
+    .printer .bank-slip-info .bank-slip-icon {
+        left: 16px
+    }
+    .printer .bank-slip-info .iugu-icon {
+        right: 16px;
+        width: 75px
+    }
+    .printer .bank-slip-info .right-bank-slip-info {
+        padding-left: 0px;
+        margin-top: 2px
+    }
+    .printer .bank-slip-info .right-bank-slip-info .bank-slip-label {
+        min-height: 30px;
+        margin-bottom: 9px
+    }
+    .printer .bank-slip-info .right-bank-slip-info .bank-slip-label .last-label {
+        margin-bottom: 0px
+    }
+    .printer .bank-slip-info .bank-slip-label.no-space-left {
+        margin-left: 0px
+    }
+    .printer .bank-slip-info .bank-slip-label.no-space-right {
+        margin-right: 0px
+    }
+    .printer .bank-slip-info .no-padding-left {
+        padding-left: 0px
+    }
+    .printer .bank-slip-info .bank-slip-label,
+    .printer .bank-slip-info .bank-slip-aut-label {
+        padding: 0 0 10px 10px;
+        border-left: 1px solid #000;
+        margin-bottom: 10px;
+        margin-left: 54px
+    }
+    .printer .bank-slip-info .bank-slip-label span,
+    .printer .bank-slip-info .bank-slip-label h5,
+    .printer .bank-slip-info .bank-slip-aut-label span,
+    .printer .bank-slip-info .bank-slip-aut-label h5 {
+        padding: 0;
+        margin: 0
+    }
+    .printer .bank-slip-info .bank-slip-label span,
+    .printer .bank-slip-info .bank-slip-aut-label span {
+        font-size: 8px
+    }
+    .printer .bank-slip-info .bank-slip-label h5,
+    .printer .bank-slip-info .bank-slip-aut-label h5 {
+        font-size: 10px
+    }
+    .printer .bank-slip-info .bank-slip-label span,
+    .printer .bank-slip-info .bank-slip-label div,
+    .printer .bank-slip-info .bank-slip-aut-label span,
+    .printer .bank-slip-info .bank-slip-aut-label div {
+        line-height: 10px;
+        margin: 0px;
+        padding: 0px;
+        display: block
+    }
+    .printer .bank-slip-info .bank-slip-label span,
+    .printer .bank-slip-info .bank-slip-aut-label span {
+        text-transform: uppercase;
+        color: #686868 !important
+    }
+    .printer .bank-slip-info .bank-slip-label .bank-info,
+    .printer .bank-slip-info .bank-slip-aut-label .bank-info {
+        margin-bottom: 0px
+    }
+    .printer .bank-slip-info .bank-slip-label .bank-info h5,
+    .printer .bank-slip-info .bank-slip-label .bank-info span,
+    .printer .bank-slip-info .bank-slip-aut-label .bank-info h5,
+    .printer .bank-slip-info .bank-slip-aut-label .bank-info span {
+        display: inline-block !important;
+        font-size: 13px
+    }
+    .printer .bank-slip-info .bank-slip-label .bank-info span,
+    .printer .bank-slip-info .bank-slip-aut-label .bank-info span {
+        margin-left: 8px
+    }
+    .printer .bank-slip-info .bank-slip-label .line,
+    .printer .bank-slip-info .bank-slip-aut-label .line {
+        margin-bottom: 4px
+    }
+    .printer .bank-slip-info .instruction-div {
+        min-height: 46px !important
+    }
+    .printer .bank-slip-info .bank-slip-label {
+        border-bottom: 1px solid #000;
+        min-height: 43px
+    }
+    .printer .bank-slip-info .bank-slip-label .cpf_or_cnpj {
+        padding-top: 2px
+    }
+    .printer .bank-slip-info .bank-slip-label .cpf_or_cnpj span {
+        color: #000 !important
+    }
+    .printer .bank-slip-info .bot-div .bank-slip-aut-label {
+        border-top: 1px solid #000;
+        position: absolute;
+        width: 208px;
+        height: 95px;
+        bottom: -42px !important;
+        right: 15px !important;
+        -webkit-print-color-adjust: exact;
+        padding-top: 5px;
+        padding-left: 0;
+        text-align: center;
+        color: #686868 !important
+    }
+    .printer .bank-slip-info .bot-div .barcode_info {
+        margin-left: 15px
+    }
+    .printer .bank-slip-info .bot-div .barcode_info .digitable-line {
+        margin-left: 20px
+    }
