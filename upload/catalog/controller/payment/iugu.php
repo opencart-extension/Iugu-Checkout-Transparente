@@ -77,7 +77,7 @@ class ControllerPaymentIugu extends Controller {
 			
 			$this->load->model('payment/iugu');
 			
-			$this->load->model_payment_iugu->updateOrderHistory($data['id'], $data['status']);
+			$this->model_payment_iugu->updateOrderHistory($data['id'], $data['status']);
 		}
 		
 	}
