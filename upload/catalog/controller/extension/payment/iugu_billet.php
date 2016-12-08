@@ -167,7 +167,7 @@ class ControllerExtensionPaymentIuguBillet extends Controller {
 
 			$this->model_checkout_order->addOrderHistory($this->session->data['order_id'], $this->config->get('iugu_order_status_pending'));
 			
-			$this->model_payment_iugu->addOrder($this->session->data['order_id'], $this->session->data['result_iugu']);
+			$this->model_extension_payment_iugu->addOrder($this->session->data['order_id'], $this->session->data['result_iugu']);
 			
 			$this->response->redirect($this->url->link('checkout/success', '', 'SSL'));
 			

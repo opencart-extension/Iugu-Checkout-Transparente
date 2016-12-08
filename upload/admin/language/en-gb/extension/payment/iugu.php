@@ -20,6 +20,7 @@ $_['text_support_heading'] 					= 'Suporte';
 $_['text_support_description'] 				= 'Me envie sua dúvida';
 $_['text_support_button'] 					= 'Tirar Duvida!';
 $_['text_support_url'] 						= 'suporte.html';
+$_['text_success'] 						    = 'Módulo atualizado';
 
 //Entry
 $_['entry_status'] 							= 'Situação';

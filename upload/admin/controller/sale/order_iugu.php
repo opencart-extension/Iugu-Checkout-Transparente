@@ -50,17 +50,28 @@ class ControllerSaleOrderIugu extends Controller {
 	public function cancel() {
 		if ($this->user->hasPermission('modify', 'sale/order_iugu')) {
 			
-			$this->language->load('sale/order_iugu');
-			
-			$this->load->library('Iugu');
+            $this->language->load('sale/order_iugu');
+            
+            $this->load->library('Iugu');
+            
+            $error = false;
+            $result = null;
+            
+            try {
+                Iugu::setApiKey($this->config->get('iugu_token'));            
+                $invoice = Iugu_Invoice::fetch($this->request->post["invoice_id"]);
+                
+                if ($invoice instanceof Iugu_Invoice) {
+                    $result = $invoice->cancel();
+                    $error = true;
+                }
+            } catch (Exception $e) {}
 		
-			Iugu::setApiKey($this->config->get('iugu_token'));
-			$invoice = Iugu_Invoice::fetch($this->request->post['invoice_id']);
-			$result = $invoice->cancel();
-		
+            $message = is_string($result) ? $result : $this->language->get('text_invoice_canceled');
+        
 			echo json_encode(array(
-				'success' => is_string($result) ? false : true,
-				'message' => is_string($result) ? $result : $this->language->get('text_invoice_canceled')
+				'success' => $error,
+				'message' => $error ? $message : "Error"
 			));
 		}
 	}

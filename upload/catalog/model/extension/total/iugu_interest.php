@@ -4,12 +4,13 @@
 	Site: http://www.valdeirsantana.com.br
 	License: http://www.gnu.org/licenses/gpl-3.0.en.html
 */
-class ModelTotalIuguDiscount extends Model {
-	public function getTotal($total) {        
+class ModelExtensionTotalIuguInterest extends Model {
+    
+	public function getTotal($total) {
 		$status = false;
 		
 		if (isset($this->session->data['payment_method']['code']) && $this->session->data['payment_method']['code'] == 'iugu_credit_card') {
-			$settings = $this->config->get('iugu_credit_card_discount');
+			$settings = $this->config->get('iugu_billet_interest');
 			
 			if ($settings['value'] > 0) {
 				$status = true;
@@ -17,7 +18,7 @@ class ModelTotalIuguDiscount extends Model {
 		}
 		
 		if (isset($this->session->data['payment_method']['code']) && $this->session->data['payment_method']['code'] == 'iugu_billet') {
-			$settings = $this->config->get('iugu_billet_discount');
+			$settings = $this->config->get('iugu_billet_interest');
 			
 			if ($settings['value'] > 0) {
 				$status = true;
@@ -25,23 +26,23 @@ class ModelTotalIuguDiscount extends Model {
 		}
 		
 		if ($status) {
-			$this->load->language('payment/iugu');
+			$this->load->language('extension/payment/iugu');
 
 			if ($settings['type'] == 'F') {
-				$discount = $settings['value'];
+				$interest = $settings['value'];
 			} else {
-				$discount = ($this->cart->getSubTotal()/100) * $settings['value'];
+				$interest = ($this->cart->getSubTotal()/100) * $settings['value'];
 			}
 
-			if ($discount > 0) {
+			if ($interest > 0) {
 				$total['totals'][] = array(
-					'code'       => 'iugu_discount',
-					'title'      => $this->language->get('text_discount'),
-					'value'      => -$discount,
+					'code'       => 'iugu_interest',
+					'title'      => $this->language->get('text_increate'),
+					'value'      => +$interest,
 					'sort_order' => ($this->config->get('sub_total_sort_order') + 1)
 				);
 
-				$total['total'] -= $discount;
+				$total['total'] += $interest;
 			}
 		}
 	}
