@@ -43,3 +43,7 @@
 
 
 ### Changelog
+
+**0.0.1**
+
+  - Criação da estrutura
