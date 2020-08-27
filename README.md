@@ -40,3 +40,6 @@
 ### Contribua
 | [![Donate](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5262W5FHDE6KA) | [![Donate](https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/209x48-doar-assina.gif)](https://pagseguro.uol.com.br/checkout/v2/donation.html?currency=BRL&receiverEmail=valdeirpsr@hotmail.com.br) |
 | --- | --- |
+
+
+### Changelog
